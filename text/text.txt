@@ -1,0 +1,10 @@
+In cryptography, subliminal channels are covert channels that can be used to communicate secretly in normal looking communication over an insecure channel. Subliminal channels in digital signature crypto systems were found in 1984 by Gustavus Simmons.
+Simmons describes how the "Prisoners' Problem" can be solved through parameter substitution in digital signature algorithms.
+Signature algorithms like ElGamal and DSA have parameters which must be set with random information. He shows how one can make use of these parameters to send a message subliminally. Because the algorithm's signature creation procedure is unchanged, the signature remains verifiable and indistinguishable from a normal signature. Therefore, it is hard to detect if the subliminal channel is used.
+Subliminal channels can be classified into broadband and narrowband channel types.
+Broadband and narrowband channels can exist in the same datastream.
+The broadband channel uses almost all available bits that are available to use. This is commonly understood to mean {>=50% but <=90%} channel utilization.
+Every channel which uses fewer bits is called a narrow-band channel.
+The additional used bits are needed for further protection, e.g., impersonation.
+The broadband and the narrow-band channels can use different algorithm parameters. A narrow-band channel cannot transport maximal information, but it can be used to send the authentication key or datastream.
+Research is ongoing: further developments can enhance the subliminal channel, e.g., allow for establishing a broadband channel without the need to agree on an authentication key in advance. Other developments try to avoid the entire subliminal channel.
